@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Job Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>THE Job Analysis.</h1>
+
+    <button id="uploadButton">Browse...</button>
+    <input type="file" id="fileInput" style="display: none;">
+    <label id="fileName">No file selected</label>
+
+    <br><br>
+
+    <!-- Drop Down Menu for Levels -->
+    <Label>Filter By Level</Label>
+    <select id="leveldropdown">
+        <option value="">All</option>
+        <option value="entry level">Entry level</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="expert">Expert</option>
+    </select>
+
+    <!-- Drop Down Menu for Type -->
+    <Label>Filter By Type</Label>
+    <select id="typedropdown">
+        <option value="">All</option>
+        <option value="one-time project">One-time project</option>
+        <option value="ongoing project">Ongoing project</option>
+    </select>
+
+    <!-- Drop Down Menu for Skill -->
+    <Label>Filter By Skill</Label>
+    <select id="skilldropdown">
+        <option value="">All</option>
+        <option value="react">React Jobs</option>
+        <option value="Web Design Jobs">Web Design Jobs</option>
+        <option value="Web Scraper Jobs">Web Scraper Jobs</option>
+        <option value="phone">Phone Jobs</option>
+        <option value="virtual">Virtual Jobs</option>
+        <option value="Landing Page Jobs">Landing Page Jobs</option>
+        <option value="api">API Jobs</option>
+        <option value="Responsive Design Jobs">Responsive Design Jobs</option>
+        <option value="API Integration Jobs">API Integration Jobs</option>
+        <option value="Real Estate Jobs">Real Estate Jobs</option>
+        <option value="html">HTML Jobs</option>
+        <option value="Information Architecture Jobs">Information Architecture Jobs</option>
+        <option value="vue.js">Vue.js Jobs</option>
+        <option value="Components Design Jobs">Components Design Jobs</option>
+        <option value="Web Application Jobs">Web Application Jobs</option>
+        <option value="Database Architecture Jobs">Database Architecture Jobs</option>
+        <option value="website">Website Jobs</option>
+        <option value="appointment">Appointment Settings Jobs</option>
+        <option value="java">Java Jobs</option>
+        <option value="Website Development Jobs">Website Development Jobs</option>
+        <option value="wireframes">Wireframes Jobs</option>
+        <option value="Custom PHP Jobs">Custom PHP Jobs</option>
+        <option value="Android Jobs">Android Jobs</option>
+        <option value="Social Media Management Jobs">Social Media Management Jobs</option>
+        <option value="Sales Development Jobs">Sales Development Jobs</option>
+        <option value="Mobile App Design Jobs">Mobile App Design Jobs</option>
+        <option value="shopify">Shopify Jobs</option>
+        <option value="communication">Communication Jobs</option>
+        <option value="UX/UI Jobs">UX/UI Jobs</option>
+        <option value="executive">Executive Jobs</option>
+        <option value="opencart">OpenCart Jobs</option>
+        <option value="Backend Rest API Jobs">Backend Rest API Jobs</option>
+        <option value="App Development Jobs">App Development Jobs</option>
+        <option value="WordPress Website Jobs">WordPress Website Jobs</option>
+        <option value="python">Python Jobs</option>
+        <option value="Automated Testing Jobs">Automated Testing Jobs</option>
+        <option value="Standalone Application Jobs">Standalone Application Jobs</option>
+        <option value="php">PHP Jobs</option>
+    </select>
+
+    <!-- filter button -->
+    <button id="filter">Filter Jobs</button>
+
+    <br><br>
+
+    <!-- Drop Down Menu for Sorting -->
+    <Label>Sort By:</Label>
+    <select id="sortingdropdown">
+        <option value="forwards">Title (A-Z)</option>
+        <option value="backwards">Title (Z-A)</option>
+        <option value="newest">Posted Time (Newest)</option>
+        <option value="oldest">Posted Time (Oldest)</option>
+    </select>
+
+    <!-- sort button -->
+    <button id="sort">Sort Jobs</button>
+
+    <!-- Output Section -->
+    <pre id="output"></pre>
+
+    <!-- Modal/Popup -->
+    <div id="jobModal">
+        <div id="modalContent"></div>
+        <button id="closeModal">OK</button>
+    </div>
+
+    <!-- Overlay -->
+    <div id="modalOverlay"></div>
+
+    <script src="JobAnalysis.js" defer></script>
+</body>
+
+</html>

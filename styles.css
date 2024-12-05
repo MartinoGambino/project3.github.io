@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+}
+
+.job {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+/* cool effect that I learned... */
+.job:hover {
+    background-color: #f9f9f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: #ccc;
+}
+
+/* File Upload Button */
+#uploadButton {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+#uploadButton:hover {
+    background-color: #ddd;
+}
+
+/* File Input Label */
+#fileName {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* Dropdown Styles */
+select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5%;  
+    border: 1px solid #ccc;
+}
+
+/* Output Section */
+#output {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#jobModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    max-height: 50vh;
+    /* so userful, allows for long text to fit in small popup */
+    overflow-y: auto; 
+    overflow-x: auto;
+}
+
+#modalContent {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* OK Button */
+#closeModal {
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#closeModal:hover {
+    background-color: darkblue;
+}
+
+/* Modal/Popup Overlay */
+#modalOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
